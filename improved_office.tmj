@@ -1,0 +1,890 @@
+{
+  "compressionlevel": -1,
+  "height": 60,
+  "width": 80,
+  "infinite": false,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.10.2",
+  "tileheight": 32,
+  "tilewidth": 32,
+  "type": "map",
+  "version": "1.10",
+  "nextlayerid": 100,
+  "nextobjectid": 100,
+  
+  "properties": [
+    {
+      "name": "mapName",
+      "type": "string",
+      "value": "Modern Virtual Office"
+    },
+    {
+      "name": "mapDescription",
+      "type": "string",
+      "value": "A spacious virtual office designed for 50-300 concurrent users with multiple zones"
+    },
+    {
+      "name": "mapImage",
+      "type": "string",
+      "value": "improved_office.png"
+    },
+    {
+      "name": "mapCopyright",
+      "type": "string",
+      "value": "Based on WorkAdventure Map Starter Kit - CC-BY-SA 3.0"
+    },
+    {
+      "name": "script",
+      "type": "string",
+      "value": "src/main.ts"
+    }
+  ],
+
+  "tilesets": [
+    {
+      "columns": 6,
+      "firstgid": 1,
+      "image": "tilesets/WA_Special_Zones.png",
+      "imageheight": 64,
+      "imagewidth": 192,
+      "margin": 0,
+      "name": "WA_Special_Zones",
+      "spacing": 0,
+      "tilecount": 12,
+      "tileheight": 32,
+      "tilewidth": 32,
+      "tiles": [
+        {
+          "id": 2,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "columns": 12,
+      "firstgid": 13,
+      "image": "tilesets/WA_Decoration.png",
+      "imageheight": 256,
+      "imagewidth": 384,
+      "margin": 0,
+      "name": "WA_Decoration",
+      "spacing": 0,
+      "tilecount": 96,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 10,
+      "firstgid": 109,
+      "image": "tilesets/WA_Miscellaneous.png",
+      "imageheight": 352,
+      "imagewidth": 320,
+      "margin": 0,
+      "name": "WA_Miscellaneous",
+      "spacing": 0,
+      "tilecount": 110,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 12,
+      "firstgid": 219,
+      "image": "tilesets/WA_Other_Furniture.png",
+      "imageheight": 416,
+      "imagewidth": 384,
+      "margin": 0,
+      "name": "WA_Other_Furniture",
+      "spacing": 0,
+      "tilecount": 156,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 25,
+      "firstgid": 375,
+      "image": "tilesets/WA_Room_Builder.png",
+      "imageheight": 1280,
+      "imagewidth": 800,
+      "margin": 0,
+      "name": "WA_Room_Builder",
+      "spacing": 0,
+      "tilecount": 1000,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 13,
+      "firstgid": 1375,
+      "image": "tilesets/WA_Seats.png",
+      "imageheight": 448,
+      "imagewidth": 416,
+      "margin": 0,
+      "name": "WA_Seats",
+      "spacing": 0,
+      "tilecount": 182,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 10,
+      "firstgid": 1557,
+      "image": "tilesets/WA_Tables.png",
+      "imageheight": 864,
+      "imagewidth": 320,
+      "margin": 0,
+      "name": "WA_Tables",
+      "spacing": 0,
+      "tilecount": 270,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 6,
+      "firstgid": 1827,
+      "image": "tilesets/WA_Logo_Long.png",
+      "imageheight": 32,
+      "imagewidth": 192,
+      "margin": 0,
+      "name": "WA_Logo_Long",
+      "spacing": 0,
+      "tilecount": 6,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 25,
+      "firstgid": 1833,
+      "image": "tilesets/WA_Exterior.png",
+      "imageheight": 1088,
+      "imagewidth": 800,
+      "margin": 0,
+      "name": "WA_Exterior",
+      "spacing": 0,
+      "tilecount": 850,
+      "tileheight": 32,
+      "tilewidth": 32
+    },
+    {
+      "columns": 13,
+      "firstgid": 2683,
+      "image": "tilesets/WA_User_Interface.png",
+      "imageheight": 672,
+      "imagewidth": 416,
+      "margin": 0,
+      "name": "WA_User_Interface",
+      "spacing": 0,
+      "tilecount": 273,
+      "tileheight": 32,
+      "tilewidth": 32
+    }
+  ],
+
+  "layers": [
+    {
+      "id": 1,
+      "name": "start",
+      "type": "tilelayer",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 60,
+      "data": []
+    },
+    {
+      "id": 2,
+      "name": "collisions",
+      "type": "tilelayer",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 60,
+      "data": []
+    },
+    {
+      "id": 10,
+      "name": "floor",
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "layers": [
+        {
+          "id": 11,
+          "name": "floor_base",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 12,
+          "name": "floor_carpets",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 13,
+          "name": "floor_outdoor",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "walls",
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "layers": [
+        {
+          "id": 21,
+          "name": "walls_base",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 22,
+          "name": "walls_windows",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 23,
+          "name": "walls_doors",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "furniture",
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "layers": [
+        {
+          "id": 31,
+          "name": "furniture_tables",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 32,
+          "name": "furniture_seats",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 33,
+          "name": "furniture_decor",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 34,
+          "name": "furniture_plants",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "floorLayer",
+      "type": "objectgroup",
+      "visible": true,
+      "opacity": 1,
+      "draworder": "topdown",
+      "x": 0,
+      "y": 0,
+      "objects": [
+        {
+          "id": 1,
+          "name": "mainSpawn",
+          "type": "area",
+          "x": 1152,
+          "y": 896,
+          "width": 256,
+          "height": 192,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "start",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "secondarySpawn",
+          "type": "area",
+          "x": 1440,
+          "y": 896,
+          "width": 192,
+          "height": 192,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "start",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "jitsiMeetingRoomA",
+          "type": "area",
+          "x": 128,
+          "y": 448,
+          "width": 320,
+          "height": 256,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "MeetingRoomA"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            },
+            {
+              "name": "focusable",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "zoom_margin",
+              "type": "float",
+              "value": 1.5
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "jitsiMeetingRoomB",
+          "type": "area",
+          "x": 512,
+          "y": 448,
+          "width": 320,
+          "height": 256,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "MeetingRoomB"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            },
+            {
+              "name": "focusable",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "zoom_margin",
+              "type": "float",
+              "value": 1.5
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "jitsiMeetingRoomC",
+          "type": "area",
+          "x": 128,
+          "y": 1344,
+          "width": 256,
+          "height": 192,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "MeetingRoomC"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            },
+            {
+              "name": "focusable",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "jitsiMeetingRoomD",
+          "type": "area",
+          "x": 448,
+          "y": 1344,
+          "width": 256,
+          "height": 192,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "MeetingRoomD"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            },
+            {
+              "name": "focusable",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "collaborationSpace",
+          "type": "area",
+          "x": 1600,
+          "y": 448,
+          "width": 640,
+          "height": 320,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "CollaborationHub"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "hangoutZone",
+          "type": "area",
+          "x": 1600,
+          "y": 960,
+          "width": 512,
+          "height": 320,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "HangoutLounge"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "hangoutBubble1",
+          "type": "area",
+          "x": 1632,
+          "y": 992,
+          "width": 128,
+          "height": 128,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "CoffeeCorner1"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "hangoutBubble2",
+          "type": "area",
+          "x": 1824,
+          "y": 992,
+          "width": 128,
+          "height": 128,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "CoffeeCorner2"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "name": "stageArea",
+          "type": "area",
+          "x": 896,
+          "y": 960,
+          "width": 384,
+          "height": 320,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "MainStage"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            },
+            {
+              "name": "focusable",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "name": "zoom_margin",
+              "type": "float",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "silentOutdoorTerrace",
+          "type": "area",
+          "x": 128,
+          "y": 64,
+          "width": 448,
+          "height": 256,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "silent",
+              "type": "bool",
+              "value": true
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "gardenArea",
+          "type": "area",
+          "x": 640,
+          "y": 64,
+          "width": 448,
+          "height": 256,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "GardenChat"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "rooftopLounge",
+          "type": "area",
+          "x": 1152,
+          "y": 64,
+          "width": 768,
+          "height": 256,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "RooftopLounge"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "name": "gameBreakoutArea",
+          "type": "area",
+          "x": 1600,
+          "y": 1344,
+          "width": 512,
+          "height": 256,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "jitsiRoom",
+              "type": "string",
+              "value": "GameRoom"
+            },
+            {
+              "name": "jitsiTrigger",
+              "type": "string",
+              "value": "onaction"
+            }
+          ]
+        },
+        {
+          "id": 70,
+          "name": "portalToConference",
+          "type": "area",
+          "x": 384,
+          "y": 1728,
+          "width": 128,
+          "height": 64,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "exitUrl",
+              "type": "string",
+              "value": "conference.tmj#from-office"
+            }
+          ]
+        },
+        {
+          "id": 71,
+          "name": "portalToTraining",
+          "type": "area",
+          "x": 1152,
+          "y": 1728,
+          "width": 128,
+          "height": 64,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "exitUrl",
+              "type": "string",
+              "value": "training.tmj#from-office"
+            }
+          ]
+        },
+        {
+          "id": 72,
+          "name": "portalToExternal",
+          "type": "area",
+          "x": 1920,
+          "y": 1728,
+          "width": 128,
+          "height": 64,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "exitUrl",
+              "type": "string",
+              "value": "https://play.workadventu.re/@/your-org/your-world/external-map"
+            }
+          ]
+        },
+        {
+          "id": 80,
+          "name": "welcomeNPC",
+          "type": "area",
+          "x": 320,
+          "y": 960,
+          "width": 64,
+          "height": 64,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "openWebsite",
+              "type": "string",
+              "value": "https://workadventu.re/getting-started"
+            },
+            {
+              "name": "openWebsiteTrigger",
+              "type": "string",
+              "value": "onaction"
+            },
+            {
+              "name": "openWebsiteTriggerMessage",
+              "type": "string",
+              "value": "Press SPACE to get help from the Welcome Guide"
+            }
+          ]
+        },
+        {
+          "id": 81,
+          "name": "infoBoardPopup",
+          "type": "area",
+          "x": 512,
+          "y": 864,
+          "width": 128,
+          "height": 64,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 82,
+          "name": "infoBoard",
+          "type": "area",
+          "x": 512,
+          "y": 928,
+          "width": 128,
+          "height": 64,
+          "rotation": 0,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "above",
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "x": 0,
+      "y": 0,
+      "layers": [
+        {
+          "id": 51,
+          "name": "above_furniture",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        },
+        {
+          "id": 52,
+          "name": "above_decorations",
+          "type": "tilelayer",
+          "visible": true,
+          "opacity": 1,
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 60,
+          "data": []
+        }
+      ]
+    }
+  ]
+}
+
